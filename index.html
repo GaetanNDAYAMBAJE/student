@@ -11,8 +11,18 @@
     <div class="main">
     <h1>Student list</h1>
         <ul class="students" id="studentid">
-            
+            <div class="top-container"><button id="btn-add-student">Add student</button></div>
         </ul>
+        <div class="form-container hideorshow" id="formcontainer">
+        <form class="form" id="form-data">
+            <div class="top-form"><h2>Add student data here</h2><button id="btnclose">x</button></div>
+            <input type="text" class="txts" placeholder="Enter student name" id="name"/>
+            <input type="text" class="txts" placeholder="Enter student email" id="email"/>
+            <input type="text" class="txts" placeholder="Enter phone number" id="phone"/>
+
+            <div class="btn-container"><button class="btn" id="submitdata">Submit data</button></div>
+        </form>
+    </div>
  </div>
     <script src="main.js"></script>
 </body>

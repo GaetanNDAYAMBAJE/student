@@ -39,3 +39,87 @@ h1{
     background-color: rgb(245, 245, 245);
     color: rgb(1, 59, 52);
 }
+
+.top-container{
+    display: flex;
+    justify-content: right;
+}
+.top-container button {
+    background-color: rgb(1, 135, 115);
+    border-radius: 5px;
+    width: 150px;
+    padding: 1rem 1rem;
+    border:0;
+    color: #fff;
+    box-shadow: 0 0 3px 3px rgba(179, 179, 179, 0.527);
+}
+.top-container button:hover{
+    background-color: rgb(1, 52, 52);
+    color: rgb(245, 245, 245);
+}
+.form-container{
+    background-color: rgba(48, 51, 51, 0.363);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow:  0 0 10px 10px rgba(156, 156, 156, 0.815);
+    border: 1px solid rgb(173, 171, 171);
+    background-color: #fff;
+    z-index: 10000;
+}
+.txts{
+    height: 35px;
+    width: 350px;
+    margin-bottom: .8rem;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+}
+.txts:focus{
+    outline: none;
+}
+.btn{
+    background-color: rgb(3, 133, 115);
+    border-radius: 5px;
+    width: 150px;
+    padding: 1rem 1rem;
+    border:0;
+    color: #fff;
+    box-shadow: 0 0 3px 3px rgba(179, 179, 179, 0.527);
+}
+.btn:hover{
+    background-color: rgb(2, 114, 99);
+    color: rgb(5, 114, 99);
+}
+.btn-container{
+    display: flex;
+    justify-content: right;
+}
+.top-form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.top-form h2{
+    color: rgb(83, 83, 83);
+}
+.top-form button{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    border: none;
+    color: rgb(168, 168, 168);
+}
+.hideorshow{
+    display: none;
+}

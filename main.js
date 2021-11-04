@@ -1,30 +1,33 @@
-/* <li class="listitem">
-          <div>
-               <h2>Ndayambaje Gaetan</h2>
-               <p>gaetandeo@gmail.com</p>
-               <p>0783878328</p>
-           </div>
-         <div class="actions">
-              <button>Remove student</button>
+const students=JSON.parse(localStorage.getItem("students"))||[];
+//1. 
+//save
+//hide or show
+document
+.getElementById("btn-add-student")
+.addEventListener("click", function (e){
+  document.getElementById("formcontainer")
+  .classList.remove("hideorshow");
+});
+//close tab
+document.getElementById('btnclose')
+.addEventListener('click', function (e){
+    e.preventDefault();
+    document.getElementById("formcontainer")
+    .classList.add("hideorshow");
+});
 
-        </div>
-     </li> */
-
-     const students=[
-    {
-     name:"Ndayambaje Gaetan",
-     email:"gaetandeo@gmail.com",
-     phone:"0783878328",
-    },
-    {name:"innocent Byiringiro",
-     email:"ibyiringiro19@gmail.com",
-     phone:"0783209088",
-    },
-    {name:"Mbonigaba Alexis",
-     email:"mbonigabaalexis12@gmail.com",
-     phone:"07808973658",
-    }
-];
+document
+.getElementById('submitdata')
+.addEventListener('click', function (e){
+  let name=document.getElementById('name').value;
+  let email=document.getElementById('email').value;
+  let phone=document.getElementById('phone').value;
+  let student={name,email,phone};
+  students.push(student);
+  //JSON.stringify:help to store everything in javascript.
+  localStorage.setItem("students",JSON.stringify(students));
+  location.reload();
+});
 let studentsList=document.getElementById("studentid");
 for(let i=0;i<students.length;i++){
     let listItem=document.createElement('li');
